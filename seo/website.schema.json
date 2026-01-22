@@ -1,0 +1,10 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://chicoromelo.com/#website",
+  "url": "https://chicoromelo.com",
+  "name": "Chico Romelo",
+  "publisher": {
+    "@id": "https://chicoromelo.com/#musicgroup"
+  }
+}

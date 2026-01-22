@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FAVICON -->
     <link rel="icon" href="./favicon.ico" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link
@@ -13,6 +14,63 @@
     />
     <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
     <link rel="manifest" href="./site.webmanifest" />
+
+    <!-- SEO CONTENT -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MusicGroup",
+        "@id": "https://chicoromelo.com/#musicgroup",
+        "name": "Chico Romelo",
+        "url": "https://chicoromelo.com",
+        "description": "Chico Romelo é uma banda baseada em Lisboa que cruza a canção brasileira com influências latinas e urbanas, criando um som de rua, comunidade e pertencimento.",
+        "genre": ["Música brasileira", "Canção brasileira", "Ritmos latinos"],
+        "foundingLocation": {
+          "@type": "Place",
+          "name": "Lisboa, Portugal"
+        },
+        "sameAs": [
+          "https://www.instagram.com/chicoromelo",
+          "https://open.spotify.com/artist/SEU_ID",
+          "https://www.youtube.com/@chicoromelo"
+        ]
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://chicoromelo.com/#website",
+        "url": "https://chicoromelo.com",
+        "name": "Chico Romelo",
+        "publisher": {
+          "@id": "https://chicoromelo.com/#musicgroup"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MusicAlbum",
+        "name": "Chico Romelo (EP)",
+        "albumReleaseType": "EP",
+        "datePublished": "2025",
+        "numTracks": 4,
+        "byArtist": {
+          "@type": "MusicGroup",
+          "name": "Chico Romelo"
+        },
+        "track": [
+          { "@type": "MusicRecording", "name": "2 de Fevereiro" },
+          { "@type": "MusicRecording", "name": "Teste Drive" },
+          { "@type": "MusicRecording", "name": "Passatempo" },
+          { "@type": "MusicRecording", "name": "Beira do Rio" }
+        ]
+      }
+    </script>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/main.css" />
     <title>Chico Romelo | Home</title>
   </head>

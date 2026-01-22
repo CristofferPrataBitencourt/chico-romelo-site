@@ -1,0 +1,34 @@
+{
+  "@context": "https://schema.org",
+  "@type": "MusicAlbum",
+  "name": "Chico Romelo (EP)",
+  "albumReleaseType": "EP",
+  "datePublished": "2025",
+  "numTracks": 4,
+  "byArtist": {
+    "@type": "MusicGroup",
+    "name": "Chico Romelo"
+  },
+  "track": [
+    {
+      "@type": "MusicRecording",
+      "name": "2 de Fevereiro"
+    },
+    {
+      "@type": "MusicRecording",
+      "name": "Teste Drive"
+    },
+    {
+      "@type": "MusicRecording",
+      "name": "Passatempo"
+    },
+    {
+      "@type": "MusicRecording",
+      "name": "Beira do Rio"
+    }
+  ],
+  "sameAs": [
+    "https://open.spotify.com/album/SEU_ID",
+    "https://music.apple.com/album/SEU_ID"
+  ]
+}

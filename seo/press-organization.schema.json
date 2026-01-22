@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Chico Romelo",
+  "url": "https://chicoromelo.com",
+  "logo": "https://chicoromelo.com/assets/img/logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Press",
+    "email": "contato@chicoromelo.com"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "@id": "https://chicoromelo.com/sobre#about",
+  "url": "https://chicoromelo.com/sobre",
+  "name": "Sobre | Chico Romelo",
+  "about": {
+    "@id": "https://chicoromelo.com/#musicgroup"
+  }
+}

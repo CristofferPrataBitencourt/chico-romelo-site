@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "MusicGroup",
+  "@id": "https://chicoromelo.com/#musicgroup",
+  "name": "Chico Romelo",
+  "url": "https://chicoromelo.com",
+  "description": "Chico Romelo é uma banda baseada em Lisboa que cruza a canção brasileira com influências latinas e urbanas, criando um som de rua, comunidade e pertencimento.",
+  "genre": [
+    "Música brasileira",
+    "Canção brasileira",
+    "Ritmos latinos"
+  ],
+  "foundingLocation": {
+    "@type": "Place",
+    "name": "Lisboa, Portugal"
+  },
+  "sameAs": [
+    "https://www.instagram.com/chicoromelo",
+    "https://open.spotify.com/artist/SEU_ID",
+    "https://www.youtube.com/@chicoromelo"
+  ]
+}
