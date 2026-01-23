@@ -1,26 +1,27 @@
-:root{
-    /* Cores */
-    --color-text-primary: #373435;
-    --color-text-strong: #000;
-    --color-text-inverse: #fdf4e8;
-    --color-surface-neutral: #fff;
-    --color-brand-primary: #404015;
-    --color-brand-secondary: #878766;
+:root {
+  /* Cores */
+  --color-text-primary: #373435;
+  --color-text-strong: #000;
+  --color-text-inverse: #fdf4e8;
+  --color-surface-neutral: #fff;
+  --color-brand-primary: #404015;
+  --color-brand-secondary: #878766;
+  --bg-main-gradient: linear-gradient(180deg, #ffffff 0%, #fdf4e8 100%);
 
-    /* Font families */
-    --font-heading: "Chunk", system-ui, sans-serif;
-    --font-body: "Montserrat", system-ui, -apple-system, sans-serif;
-    
-    /* Font weights */
-    --font-weight-regular: 400;
-    --font-weight-medium: 500;
-    --font-weight-semibold: 600;
-    --font-weight-bold: 700;
+  /* Font families */
+  --font-heading: "Chunk", system-ui, sans-serif;
+  --font-body: "Montserrat", system-ui, -apple-system, sans-serif;
 
-    /* Line heights */
-    --lh-display: 1.1;
-    --lh-heading: 1.2;
-    --lh-subheading: 1.3;
-    --lh-body: 1.6;
-    --lh-small: 1.4;
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line heights */
+  --lh-display: 1.1;
+  --lh-heading: 1.2;
+  --lh-subheading: 1.3;
+  --lh-body: 1.6;
+  --lh-small: 1.4;
 }
