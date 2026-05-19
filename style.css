@@ -121,7 +121,7 @@ a {
 .smodal-card {
   position: relative;
   background: var(--charcoal);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255,255,255,0.1);
   border-radius: 18px;
   padding: 32px 28px 28px;
   width: 100%;
@@ -130,7 +130,7 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.5);
   transform: translateY(16px) scale(0.97);
   transition: transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
@@ -143,7 +143,7 @@ a {
   right: 14px;
   width: 32px;
   height: 32px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255,255,255,0.08);
   border: none;
   border-radius: 50%;
   color: var(--cream);
@@ -154,7 +154,7 @@ a {
   transition: background 0.15s;
 }
 .smodal-close:hover {
-  background: rgba(255, 255, 255, 0.16);
+  background: rgba(255,255,255,0.16);
 }
 .smodal-cover {
   width: 180px;
@@ -162,7 +162,7 @@ a {
   border-radius: 10px;
   overflow: hidden;
   flex-shrink: 0;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
 }
 .smodal-cover img {
   width: 100%;
@@ -219,9 +219,7 @@ a {
   backdrop-filter: blur(18px) saturate(160%);
   -webkit-backdrop-filter: blur(18px) saturate(160%);
   border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow:
-    0 4px 24px rgba(0, 0, 0, 0.18),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.1);
   font-family: var(--f-body);
   font-weight: 500;
   font-size: 14px;
@@ -263,24 +261,12 @@ a {
 }
 
 @keyframes hero-fade-photo {
-  from {
-    opacity: 0;
-    transform: scale(1.04);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+  from { opacity: 0; transform: scale(1.04); }
+  to   { opacity: 1; transform: scale(1); }
 }
 @keyframes hero-fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(22px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 .hero {
@@ -1308,9 +1294,7 @@ footer.foot {
     align-items: center;
     justify-content: center;
     /* top: 0; */
-    transition:
-      opacity 0.25s,
-      transform 0.25s;
+    transition: opacity 0.25s, transform 0.25s;
   }
   .nav.nav--hidden {
     opacity: 0;
@@ -1345,10 +1329,7 @@ footer.foot {
     height: 2px;
     background: var(--cream);
     border-radius: 2px;
-    transition:
-      transform 0.25s,
-      opacity 0.25s,
-      width 0.25s;
+    transition: transform 0.25s, opacity 0.25s, width 0.25s;
     transform-origin: center;
   }
   /* X state */
@@ -1391,9 +1372,7 @@ footer.foot {
     padding: 10px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     opacity: 0.85;
-    transition:
-      opacity 0.15s,
-      color 0.15s;
+    transition: opacity 0.15s, color 0.15s;
   }
   .nav-drawer a:last-child {
     border-bottom: none;
@@ -1687,7 +1666,7 @@ footer.foot {
   .collage {
     flex: none;
     width: 100%;
-    height: 480px;
+    height: 420px;
   }
   .piece-1 {
     top: 70px;
@@ -1715,8 +1694,8 @@ footer.foot {
   }
   .piece-5 {
     display: block;
-    top: 360px;
-    left: 80px;
+    top: 102px;
+    left: 300px;
     width: 158px;
     height: 118px;
   }
