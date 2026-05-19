@@ -1,94 +1,594 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- FAVICON -->
-    <link rel="icon" href="./favicon.ico" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="./favicon-96x96.png"
-    />
-    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
-    <link rel="manifest" href="./site.webmanifest" />
-
-    <!-- SEO CONTENT -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "MusicGroup",
-        "@id": "https://chicoromelo.com/#musicgroup",
-        "name": "Chico Romelo",
-        "url": "https://chicoromelo.com",
-        "description": "Chico Romelo é uma banda baseada em Lisboa que cruza a canção brasileira com influências latinas e urbanas, criando um som de rua, comunidade e pertencimento.",
-        "genre": ["Música brasileira", "Canção brasileira", "Ritmos latinos"],
-        "foundingLocation": {
-          "@type": "Place",
-          "name": "Lisboa, Portugal"
-        },
-        "sameAs": [
-          "https://www.instagram.com/chicoromelo",
-          "https://open.spotify.com/artist/SEU_ID",
-          "https://www.youtube.com/@chicoromelo"
-        ]
-      }
-    </script>
-
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "@id": "https://chicoromelo.com/#website",
-        "url": "https://chicoromelo.com",
-        "name": "Chico Romelo",
-        "publisher": {
-          "@id": "https://chicoromelo.com/#musicgroup"
-        }
-      }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "MusicAlbum",
-        "name": "Chico Romelo (EP)",
-        "albumReleaseType": "EP",
-        "datePublished": "2025",
-        "numTracks": 4,
-        "byArtist": {
-          "@type": "MusicGroup",
-          "name": "Chico Romelo"
-        },
-        "track": [
-          { "@type": "MusicRecording", "name": "2 de Fevereiro" },
-          { "@type": "MusicRecording", "name": "Teste Drive" },
-          { "@type": "MusicRecording", "name": "Passatempo" },
-          { "@type": "MusicRecording", "name": "Beira do Rio" }
-        ]
-      }
-    </script>
-
-    <!-- CSS -->
-    <!-- Reset -->
-    <link rel="stylesheet" href="/css/reset.css" />
-    <!-- Variables -->
-    <link rel="stylesheet" href="/css/variables.css" />
-    <!-- Fonts -->
-    <link rel="stylesheet" href="/css/fonts.css" />
-    <!-- Typography -->
-    <link rel="stylesheet" href="/css/typography.css" />
-    <!-- Layout -->
-    <link rel="stylesheet" href="/css/layout.css" />
-    <!-- Components -->
-    <link rel="stylesheet" href="/css/components.css" />
-    <!-- Page -->
-    <link rel="stylesheet" href="/css/pages/home.css" />
-
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
     <title>Chico Romelo | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- SEO -->
+    <meta name="description" content="Chico Romelo é uma banda de rock portuguesa com raízes no blues e no indie. Ouça os nossos lançamentos, veja datas de concertos e fique por dentro das novidades." />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Chico Romelo" />
+    <link rel="canonical" href="https://chicoromelo.pt/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="music.musician" />
+    <meta property="og:site_name" content="Chico Romelo" />
+    <meta property="og:title" content="Chico Romelo — Banda de Rock Português" />
+    <meta property="og:description" content="Chico Romelo é uma banda de rock portuguesa com raízes no blues e no indie. Ouça os nossos lançamentos, veja datas de concertos e fique por dentro das novidades." />
+    <meta property="og:url" content="https://chicoromelo.pt/" />
+    <meta property="og:image" content="https://chicoromelo.pt/assets/hero-photo.webp" />
+    <meta property="og:image:width" content="2400" />
+    <meta property="og:image:height" content="1600" />
+    <meta property="og:locale" content="pt_PT" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Chico Romelo — Banda de Rock Português" />
+    <meta name="twitter:description" content="Chico Romelo é uma banda de rock portuguesa com raízes no blues e no indie. Ouça os nossos lançamentos, veja datas de concertos e fique por dentro das novidades." />
+    <meta name="twitter:image" content="https://chicoromelo.pt/assets/hero-photo.webp" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicGroup",
+      "name": "Chico Romelo",
+      "url": "https://chicoromelo.pt",
+      "logo": "https://chicoromelo.pt/assets/logo-full.png",
+      "image": "https://chicoromelo.pt/assets/hero-photo.webp",
+      "description": "Banda de rock portuguesa com raízes no blues e no indie.",
+      "genre": ["Rock", "Blues", "Indie"],
+      "sameAs": [
+        "https://www.instagram.com/chicoromelo",
+        "https://open.spotify.com/artist/36kAOthCGAS4uOla6Sa4BF",
+        "https://www.youtube.com/@ChicoRomelo",
+        "https://music.apple.com/pt/artist/chico-romelo/1727802157"
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Special+Elite&family=Caveat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Preload LCP image -->
+    <link rel="preload" as="image" href="assets/hero-photo.webp" type="image/webp" fetchpriority="high" />
   </head>
   <body>
-    CHICO ROMELO
+    <!-- ============================================================
+     HERO
+     ============================================================ -->
+    <header class="hero" data-screen-label="Hero">
+      <div class="hero-bg">
+        <picture>
+          <source srcset="assets/hero-photo.webp" type="image/webp" />
+          <img src="assets/hero-photo.jpg" alt="Chico Romelo"
+               fetchpriority="high" loading="eager" decoding="async" />
+        </picture>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-burger" aria-label="Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links">
+          <a href="/Sobre.html">Sobre</a>
+          <a href="/Lancamentos.html">Lançamentos</a>
+        </div>
+        <a href="/index.html">
+          <picture>
+            <source srcset="assets/logo-full.webp" type="image/webp" />
+            <img class="nav-logo-img" src="assets/logo-full.png"
+                 alt="Chico Romelo" loading="eager" decoding="async" />
+          </picture>
+        </a>
+        <div class="nav-links right">
+          <a href="/Imprensa.html">Imprensa</a>
+          <a href="/Contatos.html">Contactos</a>
+        </div>
+      </nav>
+
+      <!-- Drawer (tablet/mobile only) -->
+      <div class="nav-drawer" aria-hidden="true">
+        <a href="/Sobre.html"">Sobre</a>
+        <a href="/Lancamentos.html">Lançamentos</a>
+        <a href="/Imprensa.html">Imprensa</a>
+        <a href="/Contatos.html">Contactos</a>
+      </div>
+      <div class="nav-overlay"></div>
+
+      <div class="hero-lockup">
+        <picture>
+          <source srcset="assets/logo-full.webp" type="image/webp" />
+          <img src="assets/logo-full.png" alt="CHICO ROMELO" id="full-logo"
+               loading="eager" decoding="async" />
+        </picture>
+        <picture>
+          <source srcset="assets/logo-mobile.webp" type="image/webp" />
+          <img src="assets/logo-mobile.png" alt="CHICO ROMELO" id="logo-mobile"
+               loading="eager" decoding="async" />
+        </picture>
+      </div>
+
+      <button class="hero-cta" data-modal-cover="assets/ep-cover.webp" data-modal-title="Chico Romelo — EP"
+        data-modal-spotify="https://open.spotify.com/album/2Y7nk3TuplQ2WvlEcwWROX"
+        data-modal-apple="https://music.apple.com/pt/album/chico-romelo-ep/1834828852"
+        data-modal-youtube="https://www.youtube.com/playlist?list=OLAK5uy_kRF-_VxfEMnxMSB_AWVb9wuseBOUx5c18">Ouça já →</button>
+    </header>
+
+    <!-- MARQUEE 1 -->
+    <div class="marquee" aria-hidden="true">
+      <div class="track">
+        <span>Novo EP fora</span><span class="dot">●</span>
+        <span>Chico Romelo</span><span class="star">✦</span>
+        <span>Som brasileiro entre Lisboa e a rua</span
+        ><span class="dot">●</span> <span>Ao vivo</span
+        ><span class="star">✦</span> <span>Novo EP fora</span
+        ><span class="dot">●</span> <span>Chico Romelo</span
+        ><span class="star">✦</span>
+        <span>Som brasileiro entre Lisboa e a rua</span
+        ><span class="dot">●</span> <span>Ao vivo</span
+        ><span class="star">✦</span>
+      </div>
+    </div>
+
+    <!-- ============================================================
+     A BANDA
+     ============================================================ -->
+    <section
+      id="banda"
+      class="section paper-noise"
+      data-screen-label="01 A Banda"
+    >
+      <picture>
+        <source srcset="assets/logo-stamp.webp" type="image/webp" />
+        <img class="deco-stamp" src="assets/logo-stamp.png" alt=""
+             loading="lazy" decoding="async" />
+      </picture>
+
+      <div class="banda">
+        <div class="banda-copy" data-reveal>
+          <span class="section-label"
+            ><span class="dot"></span> 01 · A Banda</span
+          >
+          <h2 class="kicker">
+            Som <em>brasileiro</em><br /><span class="outline"
+              >entre Lisboa</span
+            ><br />e a rua.
+          </h2>
+          <p class="lead">
+            A <b>Chico Romelo</b> nasce em Lisboa. Um som que cruza música
+            brasileira, palco e cidade.
+          </p>
+          <p>
+            Energia ao vivo, proximidade com o público e vida de rua. Cinco
+            vozes, uma batida só — feita para os bares pequenos, as praças
+            cheias e tudo o que houver no meio.
+          </p>
+        </div>
+
+        <div class="collage">
+          <!-- tape -->
+          <div class="tape tape-1"></div>
+          <div class="tape tape-2"></div>
+          <div class="tape tape-3"></div>
+
+          <!-- pieces -->
+          <div class="piece piece-1">
+            <picture>
+              <source srcset="assets/member-1.webp" type="image/webp" />
+              <img src="assets/member-1.jpg" alt="ao vivo" loading="lazy" decoding="async" />
+            </picture>
+            <div class="cap">ao vivo · 2025</div>
+          </div>
+          <div class="piece piece-2">
+            <picture>
+              <source srcset="assets/member-2.webp" type="image/webp" />
+              <img src="assets/member-2.jpg" alt="no palco" loading="lazy" decoding="async" />
+            </picture>
+            <div class="cap">energia no palco</div>
+          </div>
+          <div class="piece piece-3">
+            <picture>
+              <source srcset="assets/member-3.webp" type="image/webp" />
+              <img src="assets/member-3.jpg" alt="guitarra" loading="lazy" decoding="async" />
+            </picture>
+            <div class="cap">ensaio · lisboa</div>
+          </div>
+          <div class="piece piece-4">
+            <picture>
+              <source srcset="assets/member-4.webp" type="image/webp" />
+              <img src="assets/member-4.jpg" alt="vocalista" loading="lazy" decoding="async" />
+            </picture>
+            <div class="cap">voz e guitarra</div>
+          </div>
+          <div class="piece piece-5">
+            <picture>
+              <source srcset="assets/member-5.webp" type="image/webp" />
+              <img src="assets/member-5.jpg" alt="bateria" loading="lazy" decoding="async" />
+            </picture>
+            <div class="cap">ritmo · b/w</div>
+          </div>
+
+          <!-- stamps + scribbles -->
+          <div class="stamp stamp-top">★ ouça já</div>
+          <div class="stamp stamp-bottom">novo · 2025</div>
+          <div class="scribble scribble-arrow">
+            <svg width="110" height="54" viewBox="0 0 120 60" fill="none">
+              <path
+                d="M5 30 C 25 5, 55 5, 75 25 S 110 50, 115 35"
+                stroke="#404015"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+              <path
+                d="M105 28 L115 35 L107 42"
+                stroke="#404015"
+                stroke-width="3"
+                stroke-linecap="round"
+                fill="none"
+              />
+            </svg>
+          </div>
+          <div class="scribble scribble-text">som da rua!</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EYE PATTERN + MARQUEE (glued together) -->
+    <div class="eye-marquee-group">
+      <div class="eye-border">
+        <picture>
+          <source srcset="assets/eye-pattern.webp" type="image/webp" />
+          <img src="assets/eye-pattern.png" alt="" loading="lazy" decoding="async" />
+        </picture>
+      </div>
+      <div class="marquee alt reverse" aria-hidden="true">
+        <div class="track">
+          <span>EP · Chico Romelo</span><span class="dot">●</span>
+          <span>4 faixas</span><span class="star">✦</span>
+          <span>2 de Fevereiro · Teste Drive · Passatempo · Beira do Rio</span
+          ><span class="dot">●</span> <span>EP · Chico Romelo</span
+          ><span class="dot">●</span> <span>4 faixas</span
+          ><span class="star">✦</span>
+          <span>2 de Fevereiro · Teste Drive · Passatempo · Beira do Rio</span
+          ><span class="dot">●</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+     MÚSICAS
+     ============================================================ -->
+
+    <section
+      id="musicas"
+      class="section paper-noise"
+      data-screen-label="02 Músicas"
+    >
+      <picture>
+        <source srcset="assets/logo-stamp.webp" type="image/webp" />
+        <img class="deco-stamp" src="assets/logo-stamp.png" alt=""
+             loading="lazy" decoding="async" />
+      </picture>
+
+      <div class="musicas-header" data-reveal>
+        <div>
+          <span class="section-label"
+            ><span class="dot"></span> 02 · Lançamentos</span
+          >
+          <h2 class="kicker">
+            Músicas<br /><span class="outline">para</span> <em>ouvir alto.</em>
+          </h2>
+        </div>
+        <div class="musicas-meta">
+          // EP DE ESTREIA<br />
+          // GRAVADO EM LISBOA<br />
+          // 4 FAIXAS · 2025
+        </div>
+      </div>
+
+      <div class="musicas-grid">
+        <div class="ep-card" data-reveal>
+          <div class="ep-cover">
+            <picture>
+              <source srcset="assets/ep-cover.webp" type="image/webp" />
+              <img src="assets/ep-cover.jpg" alt="Chico Romelo - EP"
+                   loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <div class="ep-sticker">OUT<br />NOW<span>★ 2025 ★</span></div>
+        </div>
+
+        <div class="ep-info" data-reveal>
+          <div class="eyebrow">EP · 2025</div>
+          <h3 class="ep-title">Chico<br />Romelo</h3>
+          <div class="ep-sub">4 faixas · gravado em Lisboa · 2025</div>
+
+          <ol class="tracklist">
+            <li data-modal-cover="assets/ep-cover.webp" data-modal-title="2 de Fevereiro"
+                data-modal-spotify="https://open.spotify.com/track/4sEwfBMgnFQWXzRn3Vy9J1"
+                data-modal-apple="https://music.apple.com/pt/song/2-de-fevereiro-feat-jefferson-arg%C3%B4lo/1834828853"
+                data-modal-youtube="https://www.youtube.com/watch?v=6FFyv7y_S7A">
+              <span class="num">01</span><span class="name">2 de Fevereiro</span
+              ><span class="dur">3:42</span>
+            </li>
+            <li data-modal-cover="assets/ep-cover.webp" data-modal-title="Teste Drive"
+                data-modal-spotify="https://open.spotify.com/track/0Dl85WOI86WE4PUf8RQfTj"
+                data-modal-apple="https://music.apple.com/pt/song/teste-drive/1834828855"
+                data-modal-youtube="https://www.youtube.com/watch?v=qMva5ybHVB8">
+              <span class="num">02</span><span class="name">Teste Drive</span
+              ><span class="dur">2:58</span>
+            </li>
+            <li data-modal-cover="assets/ep-cover.webp" data-modal-title="Passatempo"
+                data-modal-spotify="https://open.spotify.com/track/1d6pXlQP80QEOIxBAWp0WK"
+                data-modal-apple="https://music.apple.com/pt/song/passatempo/1834828857"
+                data-modal-youtube="https://www.youtube.com/watch?v=x-Ucvgd04CI">
+              <span class="num">03</span><span class="name">Passatempo</span
+              ><span class="dur">4:11</span>
+            </li>
+            <li data-modal-cover="assets/ep-cover.webp" data-modal-title="Beira do Rio"
+                data-modal-spotify="https://open.spotify.com/track/2EcvhkOc9xTST3sTMWyYeg"
+                data-modal-apple="https://music.apple.com/pt/song/beira-do-rio/1834829099"
+                data-modal-youtube="https://www.youtube.com/watch?v=BLWOrynC0sA">
+              <span class="num">04</span><span class="name">Beira do Rio</span
+              ><span class="dur">3:29</span>
+            </li>
+          </ol>
+
+          <div class="streaming">
+            <a class="stream-btn" href="https://open.spotify.com/album/2Y7nk3TuplQ2WvlEcwWROX?si=KYH0x44gQe2BwSOP1BEeeQ" target="_blank">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.36-.66.48-1.021.24-2.82-1.74-6.36-2.1-10.561-1.14-.418.122-.779-.18-.899-.54-.12-.42.18-.78.54-.9 4.56-1.02 8.52-.6 11.64 1.32.42.18.479.66.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.6.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"
+                />
+              </svg>
+              Spotify →
+            </a>
+            <a class="stream-btn" href="https://music.apple.com/pt/album/chico-romelo-ep/1834828852" target="_blank">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83zM13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"
+                />
+              </svg>
+              Apple Music →
+            </a>
+            <a class="stream-btn" href="https://www.youtube.com/playlist?app=desktop&list=OLAK5uy_kRF-_VxfEMnxMSB_AWVb9wuseBOUx5c18" target="_blank">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.9 31.9 0 000 12a31.9 31.9 0 00.5 5.8A3 3 0 002.6 20c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.6a3 3 0 002.1-2.1c.3-1.9.5-3.8.5-5.8a31.9 31.9 0 00-.5-5.8zM9.8 15.5V8.5l6.2 3.5-6.2 3.5z"
+                />
+              </svg>
+              YouTube →
+            </a>
+          </div>
+
+          <div class="outros-h">Outros lançamentos</div>
+          <div class="outros">
+            <div class="outro-card" data-modal-cover="assets/single-passatempo.webp" data-modal-title="Passatempo">
+              <picture>
+                <source srcset="assets/single-passatempo.webp" type="image/webp" />
+                <img src="assets/single-passatempo.png" alt="Passatempo"
+                     loading="lazy" decoding="async" />
+              </picture>
+              <div class="cap">Passatempo</div>
+            </div>
+            <div class="outro-card" data-modal-cover="assets/single-teste-drive.webp" data-modal-title="Teste Drive">
+              <picture>
+                <source srcset="assets/single-teste-drive.webp" type="image/webp" />
+                <img src="assets/single-teste-drive.png" alt="Teste Drive"
+                     loading="lazy" decoding="async" />
+              </picture>
+              <div class="cap">Teste Drive</div>
+            </div>
+            <div class="outro-card" data-modal-cover="assets/single-2-de-fevereiro.webp" data-modal-title="2 de Fevereiro">
+              <picture>
+                <source srcset="assets/single-2-de-fevereiro.webp" type="image/webp" />
+                <img src="assets/single-2-de-fevereiro.png" alt="2 de Fevereiro"
+                     loading="lazy" decoding="async" />
+              </picture>
+              <div class="cap">2 de Fevereiro</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE 3 -->
+    <div class="marquee" aria-hidden="true">
+      <div class="track">
+        <span>Novidades</span><span class="dot">●</span>
+        <span>Shows · Estúdio · Imprensa</span><span class="star">✦</span>
+        <span>Mantém-te à escuta</span><span class="dot">●</span>
+        <span>Novidades</span><span class="dot">●</span>
+        <span>Shows · Estúdio · Imprensa</span><span class="star">✦</span>
+        <span>Mantém-te à escuta</span><span class="dot">●</span>
+      </div>
+    </div>
+
+    <!-- ============================================================
+     NOVIDADES
+     ============================================================ -->
+    <section
+      id="novidades"
+      class="section paper-noise"
+      data-screen-label="03 Novidades"
+    >
+      <div class="news-head" data-reveal>
+        <div class="ed">Vol. 01 · Nº 03</div>
+        <h2>Novidades</h2>
+        <div class="ed right">Lisboa · 2026</div>
+      </div>
+
+      <div class="news-grid">
+        <article class="clipping" data-reveal>
+          <span class="strap">★ Vídeo</span>
+          <span class="date">FEV · 2026</span>
+          <h3>Breakdown do EP</h3>
+          <div class="clipping-img">
+            <picture>
+              <source srcset="assets/ep-cover.webp" type="image/webp" />
+              <img src="assets/ep-cover.jpg" alt="Chico Romelo EP" loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <p class="lede">
+            Em Breve em nosso canal do Youtube, conteúdos sobre o processo criativo
+            e os detalhes de cada faixa.
+          </p>
+        </article>
+
+        <article class="clipping" data-reveal>
+          <span class="strap">★ Estúdio</span>
+          <span class="date">JAN · 2026</span>
+          <h3>Novas músicas</h3>
+          <div class="clipping-img">
+            <picture>
+              <source srcset="uploads/new-songs.webp" type="image/webp" />
+              <img src="uploads/new-songs.jpg" alt="Novas músicas" loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <p class="lede">
+            A Chico Romelo está em processo de composição e arranjos para os
+            próximos lançamentos. Em breve, novidades.
+          </p>
+        </article>
+
+        <article class="clipping" data-reveal>
+          <span class="strap">★ Ao vivo</span>
+          <span class="date">Maio · 2026</span>
+          <h3>Shows</h3>
+          <div class="clipping-img">
+            <picture>
+              <source srcset="uploads/rock-a-margem.webp" type="image/webp" />
+              <img src="uploads/rock-a-margem.jpg" alt="Rock à Margem" loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <p class="lede">
+            Último concerto no Rock à Margem na Casa Amarela, em Almada, com casa cheia.
+            Próximas datas anunciadas em breve.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     FOOTER
+     ============================================================ -->
+    <footer id="contactos" class="foot paper-noise" data-screen-label="Footer">
+      <div class="foot-grid">
+        <div class="mobile">
+          <picture>
+            <source srcset="assets/logo-full.webp" type="image/webp" />
+            <img class="foot-logo-img" src="assets/logo-full.png"
+                 alt="Chico Romelo" loading="lazy" decoding="async" />
+          </picture>
+        </div>
+        <div class="foot-socials">
+          <a class="foot-soc" href="https://www.instagram.com/chicoromelo" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+              <circle cx="12" cy="12" r="5"></circle>
+              <circle cx="17.5" cy="6.5" r="1.5"></circle>
+            </svg>
+          </a>
+          <a class="foot-soc" href="https://open.spotify.com/artist/36kAOthCGAS4uOla6Sa4BF" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2a10 10 0 100 20 10 10 0 000-20zm4.6 14.4a.6.6 0 01-.8.2c-2.3-1.4-5.2-1.7-8.6-.9a.6.6 0 11-.3-1.2c3.7-.8 6.9-.5 9.5 1.1a.6.6 0 01.2.8zm1.2-2.7a.8.8 0 01-1 .3c-2.7-1.6-6.7-2.1-9.8-1.1a.8.8 0 11-.4-1.5c3.6-1.1 8-.5 11 1.3a.8.8 0 01.2 1zm.1-2.8c-3.2-1.9-8.4-2.1-11.4-1.1a.9.9 0 11-.5-1.8c3.5-1 9.2-.8 12.8 1.3a.9.9 0 01-.9 1.6z"
+              />
+            </svg>
+          </a>
+          <a class="foot-soc" href="https://www.youtube.com/@ChicoRomelo" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.9 31.9 0 000 12a31.9 31.9 0 00.5 5.8A3 3 0 002.6 20c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.6a3 3 0 002.1-2.1c.3-1.9.5-3.8.5-5.8a31.9 31.9 0 00-.5-5.8zM9.8 15.5V8.5l6.2 3.5-6.2 3.5z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="full">
+          <picture>
+            <source srcset="assets/logo-full.webp" type="image/webp" />
+            <img class="foot-logo-img" src="assets/logo-full.png"
+                 alt="Chico Romelo" loading="lazy" decoding="async" />
+          </picture>
+        </div>
+        <div class="foot-links">
+          <a href="#banda">sobre</a>
+          <a href="#musicas">Lançamentos</a>
+          <a href="#novidades">Imprensa</a>
+          <a href="#contactos">Contatos</a>
+        </div>
+      </div>
+      <div class="foot-bottom">2026 © Chico Romelo</div>
+    </footer>
+
+    <!-- ============================================================
+     STREAMING MODAL
+     ============================================================ -->
+    <div class="smodal-overlay" id="streamModal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="smodal-card">
+        <button class="smodal-close" aria-label="Fechar">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <line x1="1" y1="1" x2="17" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <line x1="17" y1="1" x2="1" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <div class="smodal-cover">
+          <img id="smodalCover" src="" alt="" loading="lazy" decoding="async" />
+        </div>
+        <p class="smodal-title" id="smodalTitle"></p>
+        <div class="smodal-label">Ouvir em</div>
+        <div class="smodal-btns">
+          <a class="stream-btn" href="#" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.36-.66.48-1.021.24-2.82-1.74-6.36-2.1-10.561-1.14-.418.122-.779-.18-.899-.54-.12-.42.18-.78.54-.9 4.56-1.02 8.52-.6 11.64 1.32.42.18.479.66.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.6.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+            Spotify
+          </a>
+          <a class="stream-btn" href="#" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83zM13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            Apple Music
+          </a>
+          <a class="stream-btn" href="#" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.9 31.9 0 000 12a31.9 31.9 0 00.5 5.8A3 3 0 002.6 20c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.6a3 3 0 002.1-2.1c.3-1.9.5-3.8.5-5.8a31.9 31.9 0 00-.5-5.8zM9.8 15.5V8.5l6.2 3.5-6.2 3.5z"/></svg>
+            YouTube
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
   </body>
 </html>

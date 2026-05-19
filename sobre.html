@@ -1,68 +1,422 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- FAVICON -->
-    <link rel="icon" href="./favicon.ico" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="./favicon-96x96.png"
-    />
-    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
-    <link rel="manifest" href="./site.webmanifest" />
-    <!-- SEO CONTENT -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "MusicGroup",
-        "@id": "https://chicoromelo.com/#musicgroup",
-        "name": "Chico Romelo",
-        "url": "https://chicoromelo.com",
-        "description": "Chico Romelo é uma banda baseada em Lisboa que cruza a canção brasileira com influências latinas e urbanas, criando um som de rua, comunidade e pertencimento.",
-        "genre": ["Música brasileira", "Canção brasileira", "Ritmos latinos"],
-        "foundingLocation": {
-          "@type": "Place",
-          "name": "Lisboa, Portugal"
-        },
-        "sameAs": [
-          "https://www.instagram.com/chicoromelo",
-          "https://open.spotify.com/artist/SEU_ID",
-          "https://www.youtube.com/@chicoromelo"
-        ]
-      }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "AboutPage",
-        "@id": "https://chicoromelo.com/sobre#about",
-        "url": "https://chicoromelo.com/sobre",
-        "name": "Sobre | Chico Romelo",
-        "about": {
-          "@id": "https://chicoromelo.com/#musicgroup"
-        }
-      }
-    </script>
-    <!-- Reset -->
-    <link rel="stylesheet" href="/css/reset.css" />
-    <!-- Variables -->
-    <link rel="stylesheet" href="/css/variables.css" />
-    <!-- Fonts -->
-    <link rel="stylesheet" href="/css/fonts.css" />
-    <!-- Typography -->
-    <link rel="stylesheet" href="/css/typography.css" />
-    <!-- Layout -->
-    <link rel="stylesheet" href="/css/layout.css" />
-    <!-- Components -->
-    <link rel="stylesheet" href="/css/components.css" />
-    <!-- Page -->
-    <link rel="stylesheet" href="/css/pages/sobre.css" />
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+    <title>Chico Romelo | Sobre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Document</title>
+    <!-- SEO -->
+    <meta name="description" content="Conhece a banda Chico Romelo: a história, os membros e a música que nos define. Rock português com alma, blues e indie no coração." />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Chico Romelo" />
+    <link rel="canonical" href="https://chicoromelo.pt/Sobre.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Chico Romelo" />
+    <meta property="og:title" content="Sobre — Chico Romelo" />
+    <meta property="og:description" content="Conhece a banda Chico Romelo: a história, os membros e a música que nos define. Rock português com alma, blues e indie no coração." />
+    <meta property="og:url" content="https://chicoromelo.pt/Sobre.html" />
+    <meta property="og:image" content="https://chicoromelo.pt/uploads/AZ4A0489.webp" />
+    <meta property="og:locale" content="pt_PT" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sobre — Chico Romelo" />
+    <meta name="twitter:description" content="Conhece a banda Chico Romelo: a história, os membros e a música que nos define." />
+    <meta name="twitter:image" content="https://chicoromelo.pt/uploads/AZ4A0489.webp" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Sobre — Chico Romelo",
+      "url": "https://chicoromelo.pt/Sobre.html",
+      "description": "Conhece a banda Chico Romelo: a história, os membros e a música.",
+      "isPartOf": { "@type": "WebSite", "name": "Chico Romelo", "url": "https://chicoromelo.pt" }
+    }
+    </script>
+
+    <!-- Preload LCP hero image -->
+    <link rel="preload" as="image" href="uploads/AZ4A0489.webp" type="image/webp" fetchpriority="high" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Special+Elite&family=Caveat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pages.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- NAV -->
+    <nav class="nav">
+      <button class="nav-burger" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <a href="/Sobre.html">Sobre</a>
+        <a href="/Lancamentos.html">Lançamentos</a>
+      </div>
+      <a href="/index.html">
+        <picture>
+          <source srcset="assets/logo-full.webp" type="image/webp" />
+          <img
+            class="nav-logo-img"
+            src="assets/logo-full.png"
+            alt="Chico Romelo"
+            loading="eager"
+            decoding="async"
+          />
+        </picture>
+      </a>
+      <div class="nav-links right">
+        <a href="/Imprensa.html">Imprensa</a>
+        <a href="/Contatos.html">Contactos</a>
+      </div>
+    </nav>
+    <div class="nav-drawer" aria-hidden="true">
+      <a href="Sobre.html">Sobre</a>
+      <a href="Lancamentos.html">Lançamentos</a>
+      <a href="Imprensa.html">Imprensa</a>
+      <a href="Contatos.html">Contactos</a>
+    </div>
+    <div class="nav-overlay"></div>
+
+    <!-- PAGE HERO -->
+    <header class="page-hero">
+      <div class="page-hero-bg">
+        <picture>
+          <source srcset="uploads/AZ4A0489.webp" type="image/webp" />
+          <img src="uploads/AZ4A0489.jpg" alt="Chico Romelo ao vivo"
+               fetchpriority="high" loading="eager" decoding="async" />
+        </picture>
+      </div>
+      <div class="page-hero-content">
+        <div class="page-hero-label"><span class="dot"></span> A Banda</div>
+        <h1>Sobre</h1>
+      </div>
+    </header>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="track">
+        <span>Comunidade em movimento</span><span class="dot">●</span>
+        <span>Lisboa · Salvador · Santos</span><span class="star">✦</span>
+        <span>Cinco vozes, uma batida</span><span class="dot">●</span>
+        <span>Comunidade em movimento</span><span class="dot">●</span>
+        <span>Lisboa · Salvador · Santos</span><span class="star">✦</span>
+        <span>Cinco vozes, uma batida</span><span class="dot">●</span>
+      </div>
+    </div>
+
+    <!-- BIO SECTION -->
+    <section class="bio-section paper-noise">
+      <img
+        class="deco-stamp"
+        src="assets/logo-stamp.png"
+        alt=""
+        loading="lazy"
+        style="width: 400px; right: -80px; top: -80px"
+      />
+
+      <div class="bio-inner">
+        <div class="bio-text" data-reveal>
+          <span class="section-label"
+            ><span class="dot"></span> 01 · A Banda</span
+          >
+          <h2 class="kicker">
+            Uma viagem<br /><span class="outline">musical.</span>
+          </h2>
+          <p class="lead">
+            Chico Romelo é mais do que uma banda — é um ponto de encontro.
+          </p>
+          <p>
+            Nascida do cruzamento entre a canção brasileira, o pop-rock e os
+            ritmos latinos que ecoam por Lisboa, a banda constrói um som que
+            fala de gente, de rua e de pertencimento. As músicas soam como
+            conversas entre amigos: diretas, afetivas e cheias de vida.
+          </p>
+          <p>
+            Nos palcos, essa energia já passou por espaços marcantes da cidade
+            como o Titanic, o mySpot (Nirvana Studios) e o Hollywood Spot,
+            sempre com atuações intensas, próximas e cheias de troca com o
+            público.
+          </p>
+          <p>
+            Fora do palco, Chico Romelo se mistura ao próprio público: gente dos
+            blocos de carnaval, das rodas de Samba e da cena do Funaná
+            cabo-verdiano e do Afrobeat em Lisboa. Músicos, ouvintes e amigos se
+            confundem no mesmo fluxo — hoje no palco, amanhã no meio da roda —
+            seguindo o som, o corpo em movimento e a celebração coletiva que
+            mantém a banda viva.
+          </p>
+        </div>
+
+        <div class="bio-pull" data-reveal>
+          <div class="bio-photo-frame">
+            <div class="bio-tape bio-tape-1"></div>
+            <div class="bio-tape bio-tape-2"></div>
+            <picture>
+              <source srcset="assets/hero-photo.webp" type="image/webp" />
+              <img src="assets/hero-photo.jpg" alt="Chico Romelo — grupo" loading="lazy" decoding="async" />
+            </picture>
+            <div class="bio-photo-cap">chico romelo · lisboa · 2025</div>
+          </div>
+          <div class="bio-quote-card">
+            <p>
+              Chico Romelo é comunidade em movimento. Um espaço onde música,
+              cidade e pessoas se encontram, se misturam e continuam a tocar,
+              mesmo quando o palco se apaga.
+            </p>
+            <div class="attr">— Manifesto da banda</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EYE PATTERN + MARQUEE -->
+    <div class="eye-marquee-group">
+      <div class="eye-border">
+        <picture>
+          <source srcset="assets/eye-pattern.webp" type="image/webp" />
+          <img src="assets/eye-pattern.png" alt="" loading="lazy" decoding="async" />
+        </picture>
+      </div>
+      <div class="marquee alt reverse" aria-hidden="true">
+        <div class="track">
+          <span>Pop Rock · MPB · Funaná · Afrobeat</span
+          ><span class="dot">●</span> <span>Lisboa — Salvador — Santos</span
+          ><span class="star">✦</span>
+          <span>Pop Rock · MPB · Funaná · Afrobeat</span
+          ><span class="dot">●</span> <span>Lisboa — Salvador — Santos</span
+          ><span class="star">✦</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- MEMBERS SECTION -->
+    <section class="members-section paper-noise">
+      <img
+        class="deco-stamp"
+        src="assets/logo-stamp.png"
+        alt=""
+        loading="lazy"
+        style="width: 500px; left: -100px; bottom: -100px"
+      />
+
+      <div class="members-header" data-reveal>
+        <div class="ed">Vol. 01</div>
+        <h2>A Banda</h2>
+        <div class="ed" style="text-align: right">5 músicos</div>
+      </div>
+
+      <div class="members-grid">
+        <div class="member-card" data-reveal>
+          <picture>
+            <source srcset="assets/marcus-quintela.webp" type="image/webp" />
+            <img src="assets/marcus-quintela.jpg" alt="Marcus Quintela" loading="lazy" decoding="async" />
+          </picture>
+          <div class="member-info">
+            <div class="member-name">Marcus Quintela</div>
+            <div class="member-role">Guitarra · Voz principal</div>
+            <div class="member-origin">Salvador, BA</div>
+          </div>
+        </div>
+        <div class="member-card" data-reveal>
+          <picture>
+            <source srcset="assets/gabriel-almeida.webp" type="image/webp" />
+            <img src="assets/gabriel-almeida.jpg" alt="Gabriel Almeida" loading="lazy" decoding="async" />
+          </picture>
+          <div class="member-info">
+            <div class="member-name">Gabriel Almeida</div>
+            <div class="member-role">Baixo</div>
+            <div class="member-origin">Salvador, BA</div>
+          </div>
+        </div>
+        <div class="member-card" data-reveal>
+          <picture>
+            <source srcset="assets/cris-prata.webp" type="image/webp" />
+            <img src="assets/cris-prata.jpg" alt="Cris Prata" loading="lazy" decoding="async" />
+          </picture>
+          <div class="member-info">
+            <div class="member-name">Cris Prata</div>
+            <div class="member-role">Teclado · Vocais</div>
+            <div class="member-origin">Santos, SP</div>
+          </div>
+        </div>
+        <div class="member-card" data-reveal>
+          <picture>
+            <source srcset="assets/rafa-furtado.webp" type="image/webp" />
+            <img src="assets/rafa-furtado.jpg" alt="Rafa Furtado" loading="lazy" decoding="async" />
+          </picture>
+          <div class="member-info">
+            <div class="member-name">Rafa Furtado</div>
+            <div class="member-role">Bateria · Vocais</div>
+            <div class="member-origin">Portugal 🇨🇻</div>
+          </div>
+        </div>
+        <div class="member-card" data-reveal>
+          <picture>
+            <source srcset="assets/danillo-vieira.webp" type="image/webp" />
+            <img src="assets/danillo-vieira.jpg" alt="Danillo Vieira" loading="lazy" decoding="async" />
+          </picture>
+          <div class="member-info">
+            <div class="member-name">Danillo Vieira</div>
+            <div class="member-role">2ª Guitarra · Vocais</div>
+            <div class="member-origin">Salvador, BA</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE SECTION -->
+    <section class="live-section paper-noise">
+      <div class="live-inner">
+        <div class="live-photos" data-reveal>
+          <div class="live-photo">
+            <picture>
+              <source srcset="uploads/_MG_2808.webp" type="image/webp" />
+              <img src="uploads/_MG_2808.jpg" alt="Ao vivo" loading="lazy" decoding="async" />
+            </picture>
+            <div class="cap">ao vivo · lisboa</div>
+          </div>
+          <div class="live-photo">
+            <picture>
+              <source srcset="uploads/CR-13.webp" type="image/webp" />
+              <img
+                src="uploads/CR-13.jpg"
+                alt="Palco"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+            <div class="cap">no palco · 2025</div>
+          </div>
+          <div class="live-photo">
+            <picture>
+              <source srcset="uploads/_MG_2880.webp" type="image/webp" />
+              <img src="uploads/_MG_2880.jpg" alt="Ensaio" loading="lazy" decoding="async" />
+            </picture>
+            <div class="cap">backstage</div>
+          </div>
+        </div>
+        <div class="live-copy" data-reveal>
+          <span class="section-label"
+            ><span class="dot"></span> 02 · Ao Vivo</span
+          >
+          <h3>Palcos<br />de Lisboa</h3>
+          <p>
+            Atuações intensas, próximas e cheias de troca com o público. A
+            energia ao vivo é a alma da Chico Romelo.
+          </p>
+          <ul class="venues-list">
+            <li>
+              <span class="venue-name">mySpot</span>
+              <span class="venue-loc">Oeiras</span>
+            </li>
+            <li>
+              <span class="venue-name">Titanic</span>
+              <span class="venue-loc">Lisboa</span>
+            </li>
+            <li>
+              <span class="venue-name">Hollywood Spot</span>
+              <span class="venue-loc">Almada</span>
+            </li>
+            <li>
+              <span class="venue-name">Rock à Margem</span>
+              <span class="venue-loc">Almada</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="foot paper-noise">
+      <div class="foot-grid">
+        <div class="mobile">
+          <img
+            class="foot-logo-img"
+            src="assets/logo-full.png"
+            alt="Chico Romelo"
+            loading="lazy"
+          />
+        </div>
+        <div class="foot-socials">
+          <a
+            class="foot-soc"
+            href="https://www.instagram.com/chicoromelo"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+              <circle cx="12" cy="12" r="5"></circle>
+              <circle cx="17.5" cy="6.5" r="1.5"></circle>
+            </svg>
+          </a>
+          <a
+            class="foot-soc"
+            href="https://open.spotify.com/artist/36kAOthCGAS4uOla6Sa4BF"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Spotify"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2a10 10 0 100 20 10 10 0 000-20zm4.6 14.4a.6.6 0 01-.8.2c-2.3-1.4-5.2-1.7-8.6-.9a.6.6 0 11-.3-1.2c3.7-.8 6.9-.5 9.5 1.1a.6.6 0 01.2.8zm1.2-2.7a.8.8 0 01-1 .3c-2.7-1.6-6.7-2.1-9.8-1.1a.8.8 0 11-.4-1.5c3.6-1.1 8-.5 11 1.3a.8.8 0 01.2 1zm.1-2.8c-3.2-1.9-8.4-2.1-11.4-1.1a.9.9 0 11-.5-1.8c3.5-1 9.2-.8 12.8 1.3a.9.9 0 01-.9 1.6z"
+              />
+            </svg>
+          </a>
+          <a
+            class="foot-soc"
+            href="https://www.youtube.com/@ChicoRomelo"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="YouTube"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.9 31.9 0 000 12a31.9 31.9 0 00.5 5.8A3 3 0 002.6 20c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.6a3 3 0 002.1-2.1c.3-1.9.5-3.8.5-5.8a31.9 31.9 0 00-.5-5.8zM9.8 15.5V8.5l6.2 3.5-6.2 3.5z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="full">
+          <img
+            class="foot-logo-img"
+            src="assets/logo-full.png"
+            alt="Chico Romelo"
+            loading="lazy"
+          />
+        </div>
+        <div class="foot-links">
+          <a href="Sobre.html">Sobre</a>
+          <a href="Lancamentos.html">Lançamentos</a>
+          <a href="Imprensa.html">Imprensa</a>
+          <a href="Contatos.html">Contatos</a>
+        </div>
+      </div>
+      <div class="foot-bottom">2026 © Chico Romelo</div>
+    </footer>
+
+    <script src="pages.js"></script>
+  </body>
 </html>

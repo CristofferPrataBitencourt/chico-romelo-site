@@ -1,180 +1,655 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- FAVICON -->
-    <link rel="icon" href="./favicon.ico" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link
       rel="icon"
       type="image/png"
-      sizes="96x96"
-      href="./favicon-96x96.png"
+      sizes="32x32"
+      href="assets/favicon-32.png"
     />
-    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
-    <link rel="manifest" href="./site.webmanifest" />
-    <!-- SEO CONTENT -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "MusicGroup",
-        "@id": "https://chicoromelo.com/#musicgroup",
-        "name": "Chico Romelo",
-        "url": "https://chicoromelo.com",
-        "description": "Chico Romelo é uma banda baseada em Lisboa que cruza a canção brasileira com influências latinas e urbanas, criando um som de rua, comunidade e pertencimento.",
-        "genre": ["Música brasileira", "Canção brasileira", "Ritmos latinos"],
-        "foundingLocation": {
-          "@type": "Place",
-          "name": "Lisboa, Portugal"
-        },
-        "sameAs": [
-          "https://www.instagram.com/chicoromelo",
-          "https://open.spotify.com/artist/SEU_ID",
-          "https://www.youtube.com/@chicoromelo"
-        ]
-      }
-    </script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+    <title>Chico Romelo | Imprensa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Press kit de Chico Romelo: fotos de alta resolução, biografias, cobertura mediática e contactos para imprensa."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Chico Romelo" />
+    <link rel="canonical" href="https://chicoromelo.pt/Imprensa.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Chico Romelo" />
+    <meta property="og:title" content="Imprensa — Chico Romelo" />
+    <meta
+      property="og:description"
+      content="Press kit de Chico Romelo: fotos de alta resolução, biografias, cobertura mediática e contactos para imprensa."
+    />
+    <meta property="og:url" content="https://chicoromelo.pt/Imprensa.html" />
+    <meta
+      property="og:image"
+      content="https://chicoromelo.pt/uploads/_MG_2764.webp"
+    />
+    <meta property="og:locale" content="pt_PT" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Imprensa — Chico Romelo" />
+    <meta
+      name="twitter:description"
+      content="Press kit de Chico Romelo: fotos, bio e contactos para imprensa."
+    />
+    <meta
+      name="twitter:image"
+      content="https://chicoromelo.pt/uploads/_MG_2764.webp"
+    />
+
+    <!-- Structured Data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Chico Romelo",
-        "url": "https://chicoromelo.com",
-        "logo": "https://chicoromelo.com/assets/img/logo.png",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "Press",
-          "email": "contato@chicoromelo.com"
+        "@type": "WebPage",
+        "name": "Imprensa — Chico Romelo",
+        "url": "https://chicoromelo.pt/Imprensa.html",
+        "description": "Press kit de Chico Romelo: fotos de alta resolução, biografias e contactos para imprensa.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Chico Romelo",
+          "url": "https://chicoromelo.pt"
         }
       }
     </script>
 
-    <!-- CSS -->
-    <!-- Reset -->
-    <link rel="stylesheet" href="/css/reset.css" />
-    <!-- Variables -->
-    <link rel="stylesheet" href="/css/variables.css" />
-    <!-- Fonts -->
-    <link rel="stylesheet" href="/css/fonts.css" />
-    <!-- Typography -->
-    <link rel="stylesheet" href="/css/typography.css" />
-    <!-- Layout -->
-    <link rel="stylesheet" href="/css/layout.css" />
-    <!-- Components -->
-    <link rel="stylesheet" href="/css/components.css" />
-    <!-- Page -->
-    <link rel="stylesheet" href="/css/pages/imprensa.css" />
+    <!-- Preload LCP hero image -->
+    <link
+      rel="preload"
+      as="image"
+      href="uploads/_MG_2764.webp"
+      type="image/webp"
+      fetchpriority="high"
+    />
 
-    <title>Chico Romelo | imprensa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Special+Elite&family=Caveat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pages.css" />
   </head>
   <body>
-    <section class="Release">
-      <h1>Imprensa</h1>
-      <h2>Release</h2>
-      <p>
-        Chico Romelo é uma banda sediada em Lisboa que nasce do encontro entre a
-        canção brasileira, os ritmos latinos e a vivência urbana da cidade. O
-        projeto constrói um som direto e próximo, que fala de gente, de rua e de
-        pertencimento, com músicas que soam como conversas entre amigos —
-        afetivas, acessíveis e cheias de vida.
-      </p>
+    <!-- NAV -->
+    <nav class="nav">
+      <button class="nav-burger" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <a href="/Sobre.html">Sobre</a>
+        <a href="/Lancamentos.html">Lançamentos</a>
+      </div>
+      <a href="/index.html">
+        <picture>
+          <source srcset="assets/logo-full.webp" type="image/webp" />
+          <img
+            class="nav-logo-img"
+            src="assets/logo-full.png"
+            alt="Chico Romelo"
+            loading="eager"
+            decoding="async"
+          />
+        </picture>
+      </a>
+      <div class="nav-links right">
+        <a href="/Imprensa.html">Imprensa</a>
+        <a href="/Contatos.html">Contactos</a>
+      </div>
+    </nav>
+    <div class="nav-drawer" aria-hidden="true">
+      <a href="Sobre.html">Sobre</a>
+      <a href="Lancamentos.html">Lançamentos</a>
+      <a href="Imprensa.html">Imprensa</a>
+      <a href="Contatos.html">Contactos</a>
+    </div>
+    <div class="nav-overlay"></div>
 
-      <p>
-        Em 2025, a banda lançou o seu primeiro EP, composto por quatro faixas,
-        entre elas 2 de Fevereiro, Passatempo, Teste Drive e Beira do Rio. O
-        trabalho marca o início do percurso discográfico da Chico Romelo e
-        traduz a identidade musical do grupo, unindo canção, groove e uma forte
-        ligação com o cotidiano e o espaço urbano.
-      </p>
+    <!-- PAGE HERO -->
+    <header class="page-hero">
+      <div class="page-hero-bg">
+        <picture>
+          <source srcset="uploads/_MG_2764.webp" type="image/webp" />
+          <img
+            src="uploads/_MG_2764.jpg"
+            alt="Chico Romelo ao vivo"
+            fetchpriority="high"
+            loading="eager"
+            decoding="async"
+          />
+        </picture>
+      </div>
+      <div class="page-hero-content">
+        <div class="page-hero-label"><span class="dot"></span> Press Kit</div>
+        <h1>Im<span class="outline">pren</span>sa</h1>
+      </div>
+    </header>
 
-      <p>
-        Ao vivo, a banda aposta numa relação intensa com o público, entendendo o
-        palco como um espaço de troca e convivência. Essa energia já passou por
-        espaços marcantes da cena lisboeta, como o Titanic, o mySpot (Nirvana
-        Studios) e o Hollywood Spot, sempre com atuações próximas e
-        participativas.
-      </p>
-
-      <p>
-        Para além dos concertos, a Chico Romelo está profundamente ligada ao
-        ambiente cultural que a rodeia, dialogando com os blocos de carnaval,
-        rodas de samba e com a cena do funaná cabo-verdiano e do afrobeat em
-        Lisboa. Músicos, ouvintes e amigos circulam no mesmo fluxo, reforçando a
-        ideia da banda como uma comunidade em movimento, onde música, cidade e
-        pessoas se encontram e continuam a tocar, mesmo fora do palco.
-      </p>
-    </section>
-    <!--     Ficha Técnica     -->
-    <section class="ficha-tecnica">
-      <h2>Ficha Técnica</h2>
-    </section>
-    <div class="conteudo">
-      <p>Nome: Chico Romelo</p>
-      <p>Origem: Lisboa, Portugal</p>
-      <p>Formação: Banda</p>
-      <p>Género: Música popular brasileira contemporânea</p>
-      <p>Atividade: 2023 – presente</p>
-
-      <p><strong>Lançamentos:</strong></p>
-      <p>EP "Chico Romelo"(2025)</p>
-
-      <p><strong>Integrantes:</strong></p>
-      <p>Marcus Quintela — Voz / Guitarra</p>
-      <p>Danilo Vieira — Guitarra / Voz</p>
-      <p>Gabriel Almeida — Baixo</p>
-      <p>Cris Prata — Teclados</p>
-      <p>Rafa Furtado — Bateria</p>
-
-      <p><strong>Contacto</strong></p>
-
-      <p>Email: contato@chicoromelo.com</p>
-      <p>Instagram: @chicoromelo</p>
-      <p>Site: www.chicoromelo.com</p>
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="track">
+        <span>Press Kit · Chico Romelo</span><span class="dot">●</span>
+        <span>Fotos · Logos · Bio</span><span class="star">✦</span>
+        <span>Para uso editorial</span><span class="dot">●</span>
+        <span>Press Kit · Chico Romelo</span><span class="dot">●</span>
+        <span>Fotos · Logos · Bio</span><span class="star">✦</span>
+        <span>Para uso editorial</span><span class="dot">●</span>
+      </div>
     </div>
 
-    <!--     Discografia     -->
-    <section class="discografia">
-      <h2>Discografia</h2>
+    <!-- PRESS BIO SECTION -->
+    <section class="press-intro paper-noise">
+      <img
+        class="deco-stamp"
+        src="assets/logo-stamp.png"
+        alt=""
+        loading="lazy"
+        style="width: 400px; right: -80px; top: -80px"
+      />
+
+      <div class="press-intro-inner">
+        <div class="press-bio" data-reveal>
+          <span class="section-label"><span class="dot"></span> Press Kit</span>
+          <h2 class="kicker">
+            Biografia<br /><span class="outline">oficial.</span>
+          </h2>
+          <p class="lead">
+            Chico Romelo é uma banda formada por músicos brasileiros e
+            portugueses radicados em Lisboa, misturando pop rock com fortes
+            influências da música brasileira, latino-americana e cabo-verdiana.
+          </p>
+          <p>
+            Nascida do cruzamento entre a canção brasileira, o pop-rock e os
+            ritmos latinos que ecoam por Lisboa, a banda constrói um som que
+            fala de gente, de rua e de pertencimento. As músicas soam como
+            conversas entre amigos: diretas, afetivas e cheias de vida.
+          </p>
+          <p>
+            Nos palcos, essa energia já passou por espaços marcantes da cidade
+            como o Titanic, o mySpot (Nirvana Studios) e o Hollywood Spot,
+            sempre com atuações intensas, próximas e cheias de troca com o
+            público.
+          </p>
+          <p>
+            O grupo é composto por Marcus Quintela (guitarra e voz principal),
+            Gabriel Almeida (baixo), Cris Prata (teclado e vocais), Rafa Furtado
+            (bateria e vocais) e Danillo Vieira (segunda guitarra e vocais).
+          </p>
+        </div>
+
+        <div class="press-sidebar" data-reveal>
+          <div class="press-fact-card">
+            <h4>Ficha Técnica</h4>
+            <div class="fact-row">
+              <span class="fact-label">Género</span>
+              <span class="fact-value">Pop Rock / MPB</span>
+            </div>
+            <div class="fact-row">
+              <span class="fact-label">Base</span>
+              <span class="fact-value">Lisboa, Portugal</span>
+            </div>
+            <div class="fact-row">
+              <span class="fact-label">Membros</span>
+              <span class="fact-value">5</span>
+            </div>
+            <div class="fact-row">
+              <span class="fact-label">EP</span>
+              <span class="fact-value">Chico Romelo (2025)</span>
+            </div>
+            <div class="fact-row">
+              <span class="fact-label">Singles</span>
+              <span class="fact-value">3</span>
+            </div>
+            <div class="fact-row">
+              <span class="fact-label">Contacto</span>
+              <span class="fact-value">romelochico@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="press-download-card">
+            <h4>Download</h4>
+            <p>
+              Bio completa, fotos em alta resolução e logótipos para uso
+              editorial.
+            </p>
+            <a
+              class="download-btn"
+              href="https://drive.google.com/file/d/1gDrkMqqaAdUxha_WrwNGEU5mq94Smw0K/view?usp=drive_link"
+              target="_blank"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              Download Press Kit
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
-    <div class="conteudo">
-      <p>EP</p>
-      <p>Chico Romelo (2025)</p>
-      <p>2 de Fevereiro (feat. Jefferson Argôlo)</p>
-      <p>Teste Drive</p>
-      <p>Passatempo</p>
-      <p>Beira do Rio</p>
 
-      <p>Singles</p>
-
-      <p>2 de Fevereiro (Single Version) — 2024</p>
-      <p>Teste Drive (Single Version) — 2025</p>
-      <p>Passatempo (Single Version) — 2025</p>
-
-      <p>
-        Disponível em todas as principais digitais (Spotify, Apple Music,
-        Youtube e outas).
-      </p>
+    <!-- EYE PATTERN + MARQUEE -->
+    <div class="eye-marquee-group">
+      <div class="eye-border">
+        <picture>
+          <source srcset="assets/eye-pattern.webp" type="image/webp" />
+          <img
+            src="assets/eye-pattern.png"
+            alt=""
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
+      </div>
+      <div class="marquee alt reverse" aria-hidden="true">
+        <div class="track">
+          <span>Fotos de imprensa</span><span class="dot">●</span>
+          <span>Alta resolução · Uso editorial livre</span
+          ><span class="star">✦</span> <span>Fotos de imprensa</span
+          ><span class="dot">●</span>
+          <span>Alta resolução · Uso editorial livre</span
+          ><span class="star">✦</span>
+        </div>
+      </div>
     </div>
-    <!--     Materiais Promocionais     -->
 
-    <section class="materiais-promocionais">
-      <h2>Materiais Promocionais</h2>
-      <p>
-        Materiais oficiais da Chico Romelo para uso em imprensa, divulgação e
-        programação cultural.
-      </p>
+    <!-- PHOTOS SECTION -->
+    <section class="photos-section paper-noise">
+      <div class="photos-header" data-reveal>
+        <div class="ed">Galeria</div>
+        <h2>Fotos</h2>
+        <div class="ed" style="text-align: right">Hi-Res</div>
+      </div>
+
+      <div class="photos-grid">
+        <div class="press-photo" data-reveal>
+          <a
+            class="dl-badge"
+            href="assets/hero-photo.jpg"
+            download="Chico-Romelo-grupo-2025.jpg"
+            aria-label="Download foto"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+            >
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+          </a>
+          <picture>
+            <source srcset="assets/hero-photo.webp" type="image/webp" />
+            <img
+              src="assets/hero-photo.jpg"
+              alt="Chico Romelo — grupo"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+          <div class="cap">foto de grupo · 2025</div>
+        </div>
+        <div class="press-photo" data-reveal>
+          <a
+            class="dl-badge"
+            href="uploads/_MG_2808.jpg"
+            download="Chico-Romelo-marcus-ao-vivo.jpg"
+            aria-label="Download foto"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+            >
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+          </a>
+          <picture>
+            <source srcset="uploads/_MG_2808.webp" type="image/webp" />
+            <img
+              src="uploads/_MG_2808.jpg"
+              alt="Marcus ao vivo"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+          <div class="cap">marcus quintela · ao vivo</div>
+        </div>
+        <div class="press-photo" data-reveal>
+          <a
+            class="dl-badge"
+            href="uploads/_MG_2764.jpg"
+            download="Chico-Romelo-palco-lisboa.jpg"
+            aria-label="Download foto"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+            >
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+          </a>
+          <picture>
+            <source srcset="uploads/_MG_2764.webp" type="image/webp" />
+            <img
+              src="uploads/_MG_2764.jpg"
+              alt="Ao vivo"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+          <div class="cap">palco · lisboa</div>
+        </div>
+        <div class="press-photo" data-reveal>
+          <a
+            class="dl-badge"
+            href="uploads/_MG_2880.jpg"
+            download="Chico-Romelo-backstage-2025.jpg"
+            aria-label="Download foto"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+            >
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+          </a>
+          <picture>
+            <source srcset="uploads/_MG_2880.webp" type="image/webp" />
+            <img
+              src="uploads/_MG_2880.jpg"
+              alt="Backstage"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+          <div class="cap">backstage · 2025</div>
+        </div>
+        <div class="press-photo" data-reveal>
+          <a
+            class="dl-badge"
+            href="uploads/CR-13.jpg"
+            download="Chico-Romelo-ao-vivo.jpg"
+            aria-label="Download foto"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+            >
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+          </a>
+          <picture>
+            <source srcset="uploads/CR-13.webp" type="image/webp" />
+            <img
+              src="uploads/CR-13.jpg"
+              alt="Ao vivo"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+          <div class="cap">ao vivo · energia</div>
+        </div>
+        <div class="press-photo" data-reveal>
+          <a
+            class="dl-badge"
+            href="uploads/_MG_2546.jpg"
+            download="Chico-Romelo-banda-completa.jpg"
+            aria-label="Download foto"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+            >
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+          </a>
+          <picture>
+            <source srcset="uploads/_MG_2546.webp" type="image/webp" />
+            <img
+              src="uploads/_MG_2546.jpg"
+              alt="Banda completa"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+          <div class="cap">banda completa · ao vivo</div>
+        </div>
+      </div>
     </section>
-    <div class="conteudo">
-      <p>Downloads:</p>
-    </div>
-    <div class="links">
-      <ul>
-        <li><a href="#">Fotos promocionais (alta resolução)</a></li>
-        <li><a href="#">Fotos ao vivo</a></li>
-        <li><a href="#">Logos da banda (SVG e PNG)</a></li>
-      </ul>
-    </div>
+
+    <!-- LIVE VIDEO SECTION -->
+    <section class="video-section paper-noise">
+      <div class="video-inner">
+        <div class="video-header" data-reveal>
+          <span class="section-label"><span class="dot"></span> Ao Vivo</span>
+          <h2 class="kicker">Ver a<br /><span class="outline">banda.</span></h2>
+          <p class="video-sub">Registo ao vivo — energia, palco e público.</p>
+        </div>
+        <div class="video-embed-wrap" data-reveal>
+          <iframe
+            src="https://www.youtube.com/embed/4n8EmuvIurw"
+            title="Chico Romelo — Ao Vivo"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGOS SECTION -->
+    <section class="logos-section paper-noise">
+      <div class="logos-inner">
+        <div data-reveal>
+          <span class="section-label"><span class="dot"></span> Logótipos</span>
+          <h2 class="kicker" style="font-size: clamp(40px, 6vw, 80px)">
+            Logos &amp;<br /><span class="outline">Marca.</span>
+          </h2>
+        </div>
+        <div class="logos-grid">
+          <div class="logo-card" data-reveal>
+            <img
+              src="assets/logo-full.png"
+              alt="Logo completo"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="logo-card-label">Logo completo · Cream</div>
+          </div>
+          <div class="logo-card dark-bg" data-reveal>
+            <img
+              src="assets/logo-full.png"
+              alt="Logo completo — fundo escuro"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="logo-card-label">Logo completo · Dark</div>
+          </div>
+          <div class="logo-card olive-bg" data-reveal>
+            <img
+              src="assets/logo-full.png"
+              alt="Logo completo — fundo olive"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="logo-card-label">Logo completo · Olive</div>
+          </div>
+          <div class="logo-card" data-reveal>
+            <img
+              src="uploads/ÍCONE OFICIAL - VERDE (1).png"
+              alt="Ícone"
+              loading="lazy"
+              decoding="async"
+              style="height: 60px"
+            />
+            <div class="logo-card-label">Ícone</div>
+          </div>
+          <div class="logo-card dark-bg" data-reveal>
+            <img
+              src="assets/logo-stamp.png"
+              alt="Logo stamp"
+              loading="lazy"
+              decoding="async"
+              style="height: 70px"
+            />
+            <div class="logo-card-label">Stamp · Circular</div>
+          </div>
+          <div class="logo-card" data-reveal>
+            <img
+              src="uploads/ESTAMPA VERDE (1).png"
+              alt="Estampa"
+              loading="lazy"
+              decoding="async"
+              style="height: 40px"
+            />
+            <div class="logo-card-label">Estampa · Pattern</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="foot paper-noise">
+      <div class="foot-grid">
+        <div class="mobile">
+          <img
+            class="foot-logo-img"
+            src="assets/logo-full.png"
+            alt="Chico Romelo"
+            loading="lazy"
+          />
+        </div>
+        <div class="foot-socials">
+          <a
+            class="foot-soc"
+            href="https://www.instagram.com/chicoromelo"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+              <circle cx="12" cy="12" r="5"></circle>
+              <circle cx="17.5" cy="6.5" r="1.5"></circle>
+            </svg>
+          </a>
+          <a
+            class="foot-soc"
+            href="https://open.spotify.com/artist/36kAOthCGAS4uOla6Sa4BF"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Spotify"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2a10 10 0 100 20 10 10 0 000-20zm4.6 14.4a.6.6 0 01-.8.2c-2.3-1.4-5.2-1.7-8.6-.9a.6.6 0 11-.3-1.2c3.7-.8 6.9-.5 9.5 1.1a.6.6 0 01.2.8zm1.2-2.7a.8.8 0 01-1 .3c-2.7-1.6-6.7-2.1-9.8-1.1a.8.8 0 11-.4-1.5c3.6-1.1 8-.5 11 1.3a.8.8 0 01.2 1zm.1-2.8c-3.2-1.9-8.4-2.1-11.4-1.1a.9.9 0 11-.5-1.8c3.5-1 9.2-.8 12.8 1.3a.9.9 0 01-.9 1.6z"
+              />
+            </svg>
+          </a>
+          <a
+            class="foot-soc"
+            href="https://www.youtube.com/@ChicoRomelo"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="YouTube"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.9 31.9 0 000 12a31.9 31.9 0 00.5 5.8A3 3 0 002.6 20c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.6a3 3 0 002.1-2.1c.3-1.9.5-3.8.5-5.8a31.9 31.9 0 00-.5-5.8zM9.8 15.5V8.5l6.2 3.5-6.2 3.5z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="full">
+          <img
+            class="foot-logo-img"
+            src="assets/logo-full.png"
+            alt="Chico Romelo"
+            loading="lazy"
+          />
+        </div>
+        <div class="foot-links">
+          <a href="Sobre.html">Sobre</a>
+          <a href="Lancamentos.html">Lançamentos</a>
+          <a href="Imprensa.html">Imprensa</a>
+          <a href="Contatos.html">Contatos</a>
+        </div>
+      </div>
+      <div class="foot-bottom">2026 © Chico Romelo</div>
+    </footer>
+
+    <script src="pages.js"></script>
   </body>
 </html>
