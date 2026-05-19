@@ -647,11 +647,10 @@ a {
 .eye-border {
   overflow: hidden;
   line-height: 0;
-  margin-bottom: -26px;
   padding: 0;
-  width: 1634px;
-  margin-left: -62px;
-  margin-bottom: -31px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-bottom: -4px;
 }
 .eye-border img {
   width: 100%;
