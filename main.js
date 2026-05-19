@@ -44,9 +44,9 @@
     smodalImg.alt = title;
     smodalTitleEl.textContent = title;
     var btns = smodal.querySelectorAll('.smodal-btns .stream-btn');
-    if (btns[0]) { btns[0].href = spotify || '#'; btns[0].style.display = spotify ? '' : 'none'; }
-    if (btns[1]) { btns[1].href = apple   || '#'; btns[1].style.display = apple   ? '' : 'none'; }
-    if (btns[2]) { btns[2].href = youtube || '#'; btns[2].style.display = youtube ? '' : 'none'; }
+    if (btns[0]) { btns[0].href = spotify || '#'; btns[0].style.display = spotify ? 'inline-flex' : 'none'; }
+    if (btns[1]) { btns[1].href = apple   || '#'; btns[1].style.display = apple   ? 'inline-flex' : 'none'; }
+    if (btns[2]) { btns[2].href = youtube || '#'; btns[2].style.display = youtube ? 'inline-flex' : 'none'; }
     smodal.classList.add('is-open');
     smodal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
