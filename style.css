@@ -40,6 +40,7 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 html,
 body {
@@ -1604,6 +1605,17 @@ footer.foot {
    RESPONSIVE — MOBILE (≤ 580px)
    ============================================================ */
 @media (max-width: 580px) {
+  #banda .deco-stamp {
+    width: 240px;
+    right: -60px;
+    top: -60px;
+  }
+  #musicas .deco-stamp {
+    width: 280px;
+    left: -60px;
+    bottom: -60px;
+  }
+
   /* Nav — stretch full width, drop pill radius */
   .nav {
     top: 0;
