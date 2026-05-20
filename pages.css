@@ -718,6 +718,13 @@ a {
     flex-direction: column;
     align-items: center;
     text-align: center;
+<<<<<<< HEAD
+    gap: 8px;
+  }
+  .members-header h2 {
+    flex: none;
+=======
+>>>>>>> main
   }
   .live-photos {
     grid-template-columns: 1fr 1fr;
@@ -1066,6 +1073,16 @@ a {
   .singles-section {
     padding: 60px 5vw;
   }
+
+  .singles-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+  }
+  .singles-header h2 {
+    flex: none;
+  }
   .streaming-row {
     gap: 7px;
   }
@@ -1385,6 +1402,15 @@ a {
   .photos-section,
   .logos-section {
     padding: 60px 5vw;
+  }
+  .photos-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+  }
+  .photos-header h2 {
+    flex: none;
   }
 }
 
@@ -2043,6 +2069,16 @@ a {
     max-width: 60%;
     margin: 0 auto;
   }
+
+  .members-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+  }
+  .members-header h2 {
+    flex: none;
+  }
   .live-photos {
     grid-template-columns: 1fr 1fr;
   }
@@ -2393,6 +2429,15 @@ a {
   .streaming-row .stream-btn {
     padding: 8px 12px;
     font-size: 12px;
+  }
+  .singles-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+  }
+  .singles-header h2 {
+    flex: none;
   }
 }
 
