@@ -432,6 +432,7 @@ a {
   border: 1.5px solid var(--charcoal);
   background: var(--cream);
   transform: rotate(-1.5deg);
+  margin-bottom: 16px;
 }
 .section-label .dot {
   width: 7px;
@@ -1654,6 +1655,9 @@ footer.foot {
     left: 0;
     right: 0;
     border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     padding: 14px 20px;
     background: rgba(0, 0, 0, 0.55);
   }
@@ -1715,7 +1719,7 @@ footer.foot {
   }
   .piece-5 {
     display: block;
-    top: 360px;
+    top: 340px;
     left: 80px;
     width: 158px;
     height: 118px;
@@ -1725,13 +1729,13 @@ footer.foot {
     padding: 4px 8px;
   }
   .stamp-bottom {
-    left: 180px;
+    left: 200px;
     bottom: 8px;
     font-size: 11px;
     padding: 4px 8px;
   }
   .scribble-text {
-    bottom: 6px;
+    bottom: -25px;
     right: 6px;
     font-size: 20px;
   }

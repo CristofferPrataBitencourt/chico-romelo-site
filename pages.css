@@ -372,6 +372,12 @@ a {
   .page-hero h1 {
     font-size: clamp(48px, 13vw, 80px);
   }
+
+  .nav {
+    left: 0;
+    right: 0;
+    transform: none;
+  }
 }
 
 /* ============================================================
@@ -1283,7 +1289,9 @@ a {
   z-index: 2;
   cursor: pointer;
   text-decoration: none;
-  transition: transform 0.2s ease, background 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
 }
 .press-photo .dl-badge:hover {
   transform: rotate(6deg) scale(1.15);
@@ -2602,7 +2610,9 @@ a {
   z-index: 2;
   cursor: pointer;
   text-decoration: none;
-  transition: transform 0.2s ease, background 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
 }
 .press-photo .dl-badge:hover {
   transform: rotate(6deg) scale(1.15);
@@ -2986,9 +2996,15 @@ a {
   flex-direction: column;
   gap: 40px;
 }
-.video-header .section-label { color: var(--sage); }
-.video-header .kicker { color: var(--cream); }
-.video-header .outline { -webkit-text-stroke-color: var(--cream); }
+.video-header .section-label {
+  color: var(--sage);
+}
+.video-header .kicker {
+  color: var(--cream);
+}
+.video-header .outline {
+  -webkit-text-stroke-color: var(--cream);
+}
 .video-sub {
   color: var(--cream);
   opacity: 0.65;
@@ -3000,8 +3016,8 @@ a {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
-  border: 1px solid rgba(255,255,255,0.12);
-  box-shadow: 0 24px 60px -20px rgba(0,0,0,0.6);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 24px 60px -20px rgba(0, 0, 0, 0.6);
 }
 .video-embed-wrap iframe {
   position: absolute;
