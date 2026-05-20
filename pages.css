@@ -502,10 +502,11 @@ a {
 
 .members-header {
   max-width: 1400px;
+  min-height: 80px;
   margin: 0 auto 60px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 28px;
   border-top: 4px double var(--charcoal);
   border-bottom: 4px double var(--charcoal);
   padding: 14px 0;
@@ -520,7 +521,7 @@ a {
 }
 .members-header h2 {
   font-family: var(--f-display);
-  font-size: clamp(48px, 8vw, 120px);
+  font-size: clamp(64px, 9vw, 140px);
   line-height: 0.88;
   text-align: center;
   margin: 0;
@@ -712,6 +713,11 @@ a {
     grid-column: 1 / -1;
     max-width: 60%;
     margin: 0 auto;
+  }
+  .members-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   .live-photos {
     grid-template-columns: 1fr 1fr;
@@ -1830,7 +1836,7 @@ a {
   max-width: 1400px;
   margin: 0 auto 60px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   border-top: 4px double var(--charcoal);
   border-bottom: 4px double var(--charcoal);
@@ -2214,7 +2220,7 @@ a {
   max-width: 1400px;
   margin: 0 auto 60px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   border-top: 4px double var(--charcoal);
   border-bottom: 4px double var(--charcoal);
